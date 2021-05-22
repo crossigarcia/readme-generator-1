@@ -31,7 +31,7 @@ n/a at this time
 ## Video:
 ![README Generator Demo GIF](./assets/readme-generator.gif)
 
-Link to full video: https://drive.google.com/file/d/1kbf4nxBVNwx0ecz7Bd1o-T0tW0kfacBf/view
+Link to full video: https://drive.google.com/file/d/109h67gKcWn89AQGGydZP9mE4qJzf-s3i/view
 
 ## Questions:
 GitHub: [crossigarcia](https://github.com/crossigarcia) 
