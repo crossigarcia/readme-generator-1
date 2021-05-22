@@ -116,7 +116,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 async function init() {
    const responses = await inquirer.prompt(questions);
-   writeToFile('README.md', generateMarkdown(responses));
+   writeToFile('./dist/README.md', generateMarkdown(responses));
 
 }
 
