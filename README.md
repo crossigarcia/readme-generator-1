@@ -11,7 +11,7 @@
 * [Usage](#Usage)
 * [Contributing](#Contributing)
 * [Test](#Test)
-* [Video Demo](#Video)
+* [Video](#Video)
 * [Questions](#Questions)
 
 
@@ -28,7 +28,7 @@ n/a at this time
 ## Test:
 n/a at this time
 
-## Video Demo:
+## Video:
 ![README Generator Demo GIF](./assets/readme-generator.gif)
 
 Link to full video: https://drive.google.com/file/d/1kbf4nxBVNwx0ecz7Bd1o-T0tW0kfacBf/view
