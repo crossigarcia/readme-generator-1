@@ -48,7 +48,7 @@ function licenseTableLink(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-# ${data.title}
+# ${data.title} 
 
 ## Description: 
 > ${data.description}
@@ -82,7 +82,9 @@ ${renderLicenseSection(data.license)}
 ## Questions:
 GitHub: [${data.github}](https://github.com/${data.github}) 
 
-For additional information on this project you can email your questions here: <${data.email}>  
+For additional information on this project you can email your questions here: <${
+    data.email
+  }>  
 
 `;
 }
