@@ -14,13 +14,13 @@ function renderLicenseLink(license) {
   if (license !== 'none'){
     switch (license) {
       case 'MIT':
-        return "This project is covered under: [MIT License](https://en.wikipedia.org/wiki/MIT_License)";
+        return "This project is covered under: \n [MIT License](https://en.wikipedia.org/wiki/MIT_License)";
       case 'Apache':
-        return "This project is covered under: [Apache License](https://en.wikipedia.org/wiki/Apache_License)";
+        return "This project is covered under: \n [Apache License](https://en.wikipedia.org/wiki/Apache_License)";
       case 'GPLv3':
-        return "This project is covered under: [GPLv3 License](https://en.wikipedia.org/wiki/GNU_General_Public_License#Version_3)";
+        return "This project is covered under: \n [GPLv3 License](https://en.wikipedia.org/wiki/GNU_General_Public_License#Version_3)";
       case 'CC':
-        return "This project is covered under: [CC License](https://en.wikipedia.org/wiki/Creative_Commons_license#Types_of_license)";
+        return "This project is covered under: \n [CC License](https://en.wikipedia.org/wiki/Creative_Commons_license#Types_of_license)";
     }
   }
   return '';
@@ -38,7 +38,7 @@ ${renderLicenseLink(license)}
   return '';
 }
 
-function renderLicenseTableOfContents(license) {
+function licenseTableLink(license) {
   if (license !== 'none') {
     return `* [License](#License)`
   }
@@ -60,7 +60,7 @@ ${renderLicenseBadge(data.license)}
 * [Usage](#Usage)
 * [Contributing](#Contributing)
 * [Test](#Test)
-${renderLicenseTableOfContents(data.license)}
+${licenseTableLink(data.license)}
 * [Questions](#Questions)
 
 
@@ -82,7 +82,7 @@ ${renderLicenseSection(data.license)}
 ## Questions:
 GitHub: [${data.github}](https://github.com/${data.github}) 
 
-For additional information on this project you can email your questions here: ${data.email}  
+For additional information on this project you can email your questions here: <${data.email}>  
 
 `;
 }

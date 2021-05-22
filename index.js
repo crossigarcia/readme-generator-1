@@ -72,7 +72,7 @@ const questions = [
   {
     type: "input",
     name: "test",
-    message: "Provide information on tests for the project:",
+    message: "Provide information on tests for this project:",
   },
   {
     type: "input",

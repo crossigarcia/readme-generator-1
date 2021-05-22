@@ -1,8 +1,8 @@
 
-# a
+# d
 
 ## Description: 
-> b
+> d
 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
@@ -17,24 +17,25 @@
 
 
 ## Installation:
-c
+d
 
 ## Usage:
 d
 
 ## Contributing:
-e
+d
 
 ## Test:
-f
+d
 
 
 ## License:
-This project is covered under an [MIT License](https://en.wikipedia.org/wiki/MIT_License)
+This project is covered under: 
+ [MIT License](https://en.wikipedia.org/wiki/MIT_License)
   
 
 ## Questions:
-GitHub: [g](https://github.com/g) 
+GitHub: [d](https://github.com/d) 
 
-For additional information on this project you can email your questions here: s  
+For additional information on this project you can email your questions here: <name@name.com>  
 
