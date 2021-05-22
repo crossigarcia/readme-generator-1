@@ -2,14 +2,19 @@
 # a
 
 ## Description: 
-b
+> b
+
+![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
-* [Contribution](#Contribution)
+* [Contributing](#Contributing)
 * [Test](#Test)
-* [About](#About)
+* [License](#License)
+* [Questions](#Questions)
+
+
 
 ## Installation:
 c
@@ -17,16 +22,19 @@ c
 ## Usage:
 d
 
-## Contribution:
+## Contributing:
 e
 
 ## Test:
 f
 
-## About:
-g
-l
 
-## License
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
+## License:
+This project is covered under an [MIT License](https://en.wikipedia.org/wiki/MIT_License)
+  
+
+## Questions:
+GitHub: [g](https://github.com/g) 
+
+For additional information on this project you can email your questions here: s  
 

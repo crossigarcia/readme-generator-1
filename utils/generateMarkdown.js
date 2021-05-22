@@ -5,20 +5,44 @@ function renderLicenseBadge(license) {
   if (license !== 'none') {
     return `![license](https://img.shields.io/badge/license-${license}-blue.svg)`;
   }
-  return ''
+  return '';
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license !== 'none'){
+    switch (license) {
+      case 'MIT':
+        return "This project is covered under: [MIT License](https://en.wikipedia.org/wiki/MIT_License)";
+      case 'Apache':
+        return "This project is covered under: [Apache License](https://en.wikipedia.org/wiki/Apache_License)";
+      case 'GPLv3':
+        return "This project is covered under: [GPLv3 License](https://en.wikipedia.org/wiki/GNU_General_Public_License#Version_3)";
+      case 'CC':
+        return "This project is covered under: [CC License](https://en.wikipedia.org/wiki/Creative_Commons_license#Types_of_license)";
+    }
+  }
+  return '';
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'none') {
-    return `## License`
+    return `
+## License:
+${renderLicenseLink(license)}
+  `;
   }
-  return ''
+  return '';
+}
+
+function renderLicenseTableOfContents(license) {
+  if (license !== 'none') {
+    return `* [License](#License)`
+  }
+  return '';
 }
 
 // TODO: Create a function to generate markdown for README
@@ -27,14 +51,19 @@ function generateMarkdown(data) {
 # ${data.title}
 
 ## Description: 
-${data.description}
+> ${data.description}
+
+${renderLicenseBadge(data.license)}
 
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
-* [Contribution](#Contribution)
+* [Contributing](#Contributing)
 * [Test](#Test)
-* [About](#About)
+${renderLicenseTableOfContents(data.license)}
+* [Questions](#Questions)
+
+
 
 ## Installation:
 ${data.installation}
@@ -42,18 +71,18 @@ ${data.installation}
 ## Usage:
 ${data.usage}
 
-## Contribution:
+## Contributing:
 ${data.contribution}
 
 ## Test:
 ${data.test}
 
-## About:
-${data.github}
-${data.email}
-
 ${renderLicenseSection(data.license)}
-${renderLicenseBadge(data.license)}
+
+## Questions:
+GitHub: [${data.github}](https://github.com/${data.github}) 
+
+For additional information on this project you can email your questions here: ${data.email}  
 
 `;
 }
